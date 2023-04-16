@@ -16,10 +16,13 @@ const ProductLoop = (props) => {
     }
     const [productList, setProductList] = useState(products);
 
+    const removeProductFromList = (product) => {
+        setProductList(productList.filter(pd => pd.key !== product.key));
+    }
     return (
         <div className='product-loop'>
             {
-                productList.map(product =>  <ProductLoopItem product={product} addToCartHandler={props.addToCartHandler}></ProductLoopItem> )
+                productList.map(product =>  <ProductLoopItem product={product} removeProductHandler={removeProductFromList} addToCartHandler={props.addToCartHandler}></ProductLoopItem> )
             }
         </div>
     );
