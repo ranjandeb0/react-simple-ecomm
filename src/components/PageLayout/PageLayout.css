@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    min-height: 80vh;
+}
+.container .column-left{
+    flex-grow: 1;
+    /* background-color: #ccc; */
+}
+.container .column-right{
+    width: 350px;
+    background-color: red;
+}

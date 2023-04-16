@@ -1,0 +1,7 @@
+.shop{
+    padding: 30px 50px;
+}
+.shop>div{
+    max-width: 1024px;
+    margin: auto;
+}
