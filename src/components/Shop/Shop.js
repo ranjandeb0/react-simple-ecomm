@@ -2,10 +2,10 @@ import React from 'react';
 import './Shop.css';
 import ProductLoop from '../ProductLoop/ProductLoop';
 
-const Shop = () => {
+const Shop = (props) => {
     return (
         <div className='shop'>
-            <ProductLoop limit='10'></ProductLoop>
+            <ProductLoop limit='10' addToCartHandler={props.addToCartHandler}></ProductLoop>
         </div>
     );
 };

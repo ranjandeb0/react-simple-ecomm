@@ -19,7 +19,7 @@ const ProductLoop = (props) => {
     return (
         <div className='product-loop'>
             {
-                productList.map(product =>  <ProductLoopItem product={product}></ProductLoopItem> )
+                productList.map(product =>  <ProductLoopItem product={product} addToCartHandler={props.addToCartHandler}></ProductLoopItem> )
             }
         </div>
     );
